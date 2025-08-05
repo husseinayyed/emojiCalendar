@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
-  "homepage": "https://husseinayyed.github.io/mood-calendar/",
+  "homepage": "https://husseinayyed.github.io/emojiCalendar/",
   "dependencies": {
     "vue": "^3.3.0"
   },
