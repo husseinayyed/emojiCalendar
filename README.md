@@ -1,5 +1,5 @@
 # 🗓️ Emoji Mood Calendar
-
+# Beta Version
 Welcome to **Emoji Mood Calendar** — a fun and interactive calendar that lets you express your daily mood using emojis!  
 Built with **Vue 3** and **Vite**, this lightweight app saves your data in the browser using **localStorage** — no backend needed!
 
