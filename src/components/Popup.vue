@@ -55,7 +55,6 @@ function hide(){
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: transparent;
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -66,6 +65,7 @@ function hide(){
 
 .popup {
   background: white;
+  box-shadow: 0;
   padding: 24px;
   border-radius: 12px;
   position: relative;
@@ -82,7 +82,7 @@ function hide(){
   background: none;
   border: none;
   font-size: 1.5rem;
-  cursor: default; /* or pointer if clickable */
+  cursor: pointer; /* or pointer if clickable */
 }
 
 .buttons {

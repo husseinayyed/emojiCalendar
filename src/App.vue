@@ -68,10 +68,30 @@ onMounted(() => {
     :today-date="currentDay"
     @day-selected="handleDaySelection"
   />
+  <Transition name="fade-scale">
+    <Popup 
+      v-show="showPopup" 
+      @hide="togglePopup" 
+      @save="saveMood" 
+    />
 
-  <Popup 
-    v-show="showPopup" 
-    @hide="togglePopup" 
-    @save="saveMood" 
-  />
+  </Transition>
 </template>
+<style>
+* {
+  user-select: none;
+}
+body {
+  margin: 0;
+}
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  transition: all 0.3s ease;
+}
+.fade-scale-enter-from,
+.fade-scale-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+  transform: translateY(20px);
+}
+</style>
