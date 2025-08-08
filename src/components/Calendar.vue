@@ -53,6 +53,24 @@ const emit = defineEmits(["day-selected"]);
   background-color: #ffffff;
   border-radius: 5px;
 }
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+    overflow-x: auto;
+    padding: 0 8px;
+  }
+
+  .weekday,
+  .day {
+    font-size: 16.89px;
+    padding: 4px;
+    min-width: 30px;
+  }
+
+  .em {
+    font-size: 1.2rem;
+  }
+}
 h1 {
   text-align: center;
   margin-top: 0;

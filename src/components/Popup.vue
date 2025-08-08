@@ -1,12 +1,14 @@
 <template>
   <div class="overlay">
     <div class="popup">
-      <button class="close"><i
-            class="em em-x"
-            aria-role="presentation"
-            aria-label="close"
-            @click="hide"
-          ></i></button>
+      <button class="close">
+        <i
+          class="em em-x"
+          aria-role="presentation"
+          aria-label="close"
+          @click="hide"
+        ></i>
+      </button>
       <h2>How are you feeling?</h2>
       <div class="buttons">
         <div
@@ -29,7 +31,7 @@
 
 <script setup>
 import { ref } from "vue";
-const emit = defineEmits(['save','hide'])
+const emit = defineEmits(["save", "hide"]);
 const moods = [
   ["Happy", "smile"],
   ["Neutral", "neutral_face"],
@@ -40,14 +42,14 @@ const moods = [
   ["Anxious", "cold_sweat"],
   ["Sick", "face_vomiting"],
   ["Tired", "weary"],
-  ["Cool", "sunglasses"]
+  ["Cool", "sunglasses"],
 ];
 
 function selectMood(selected) {
-  emit('save',selected)
+  emit("save", selected);
 }
-function hide(){
-  emit('hide')
+function hide() {
+  emit("hide");
 }
 </script>
 
@@ -59,7 +61,7 @@ function hide(){
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem; /* in case screen is very small */
+  padding: 1rem;
   overflow-y: auto;
 }
 
@@ -82,7 +84,7 @@ function hide(){
   background: none;
   border: none;
   font-size: 1.5rem;
-  cursor: pointer; /* or pointer if clickable */
+  cursor: pointer;
 }
 
 .buttons {
